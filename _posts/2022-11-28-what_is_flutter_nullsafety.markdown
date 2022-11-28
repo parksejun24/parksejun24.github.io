@@ -8,7 +8,7 @@ null safety는 프로그램이 **'null'**로부터 안전하도록 개발하는 
 null 값이 들어가면 안 되는데 null 값이 들어가서 **runtime error**가 발생하는 경우 등을 예방하려는 조치이다. <br>
 아래있는 예제 코드를 통해 null safety에 관한 설명을 진행해 보도록 하자. <br>
 
-```c++
+```cpp
 class Coffee {
   late String _temperature;
   void heat() {
