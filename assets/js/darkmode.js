@@ -8,6 +8,13 @@ function toggleDarkMode() {
     } else {
         setCookie('theme', 'dark');
         body.classList.add(DARK_CLASS);
+
+        var chat = document.getElementById('post-chat');
+        console.log(chat);
+        chat.getAttribute('theme','photon-dark'); //댓글 창을 dark모드일때랑 light 모드일때를 구분해서 theme을 바꾸고 싶은데 script 태그를 getelement 함수로 불러오지 못함 이유가 뭐지?
+        // var chat = document.getElementById('chatsystem');
+        // console.log(chat);
+        // chat.setAttribute('theme','photon-dark');
     }
 }
 
