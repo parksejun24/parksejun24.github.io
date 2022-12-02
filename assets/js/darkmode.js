@@ -27,7 +27,7 @@ function chatDarkThemeChanger() {
         chat.setAttribute(arr[i * 2], arr[i * 2 + 1]);
     }
     document.querySelector('.post-container').appendChild(chat);
-}
+} 
 
 function chatLightThemeChanger() {
     var head = document.querySelector('.post-container');
@@ -44,6 +44,11 @@ function chatLightThemeChanger() {
     }
     document.querySelector('.post-container').appendChild(chat);
 }
+
+//html 코드에서 script를 통해 댓글창을 생성하는 형식이라 댓글창의 div태그의 atrribute에 theme 속성이 없으므로 
+//다크모드로 전환 할때마다 댓글창을 삭제하고 다른 테마를 적용한 스크립트 태그를 생성하여 새로운 댓글창을 생성하는 형식으로 구현함
+// chatLightThemeChanger() : DarkMode 채팅창 지우고 LightMode 채팅창 생성
+// chatDarkThemeChanger() : LightMode 채팅창 지우고 DarkMode 채팅창 생성
 
 function getCookie(name) {
     var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
