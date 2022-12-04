@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dart 기본 문법 완벽 정리1 (Type)"
-date:   2022-12-5 00:54:36 +0530
+date:   2022-12-4 00:54:36 +0530
 categories: Dart Study
 ---
 ### var(type 추론)
